@@ -1,0 +1,25 @@
+# Ignore raw sequencing data formats (FASTQ/FASTA)
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fasta
+*.fa
+
+# Ignore large binary/data objects common in bioinformatics
+*.bam
+*.sam
+*.vcf
+*.bgen
+*.bed
+*.rds
+*.RData
+
+# Specific rule to ensure raw data directory data doesn't get flooded
+data/SRR*
+
+# Optional: If you want to protect your repo completely, 
+# you can ignore everything inside data/ EXCEPT specific small files:
+# data/*
+# !data/SRR_Acc_List.txt
+# !data/GSE183947_fpkm.csv
